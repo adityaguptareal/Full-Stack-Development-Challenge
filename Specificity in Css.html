@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Specicicity of this h1 is 1 */
+    h1{
+        color: blue;
+    }
+    .yellow{
+        /* Specicicity of this h1 is 10 */
+        color: black;
+    }
+    .cred{
+        /* Specicicity of this h1 is 10 */
+        color: yellow;
+    }
+    .cpurple{
+        /* Specicicity of this h1 is 10 */
+        /* Specicicity of this h1 is 10 */
+        color: purple;
+        /* H1 will have purple color */
+    }
+        /* Specicicity of this h1 is 11 */
+    h1.name{
+        background-color: yellowgreen;
+    }
+        /* Specicicity of this h1 is 2 */
+
+    div>h1{
+        background-color: red;
+    }
+            /* Specicicity of this h1 is 11 */
+
+    .name>p{
+        color: white;
+        background-color: aquamarine;
+    }
+    
+</style>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">Hello Aditya</h1>
+    </div>
+    <div>
+        <h1 class="name">
+            <p>Aditya1</p>
+            <p>Aditya2</p>
+            <p>Aditya3</p>
+            <p>Aditya4</p>
+        </h1>
+    </div>
+</body>
+</html>
