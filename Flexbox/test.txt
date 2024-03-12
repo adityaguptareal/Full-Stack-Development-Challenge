@@ -1,0 +1,4 @@
+<li>Maggi noodles packet</li>
+<li>Water</li>
+<li>Maggi masala (seasoning)</li>
+<li>Vegetables (optional)</li>
