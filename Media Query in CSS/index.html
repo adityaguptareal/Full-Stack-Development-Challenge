@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query in CSS</title>
+</head>
+<style>
+    body {
+        background-color: red;
+
+    }
+
+    @media only screen and (max-width:375px) {
+        body {
+            background-color: blue;
+        
+
+        }
+        .boxes{
+            flex-direction: column;
+        }
+    }
+/* Media Query is used to make the website responsive. We have to manually write the media query in case of Raw CSS. But, in case of framework is use in background */
+    /* @media not/only mediatype and (expression) {
+    CSS Code;
+}   */
+
+.box{
+    height: 344px;
+    width: 344px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+</style>
+
+<body>
+    <div>Hey, I am a Red Body Guy</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
