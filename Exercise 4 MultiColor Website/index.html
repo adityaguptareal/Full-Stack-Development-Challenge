@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+</head>
+<style>
+    :root {
+        --navcolor: rgb(0, 115, 255);
+        --navtextcolor: white;
+        --secondarynavcolor: red;
+
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    li{
+        list-style: none;
+    }
+    li>a {
+        text-decoration: none;
+        color: var(--navtextcolor);
+        font-weight: 800px;
+        text-transform: uppercase;
+    }
+
+    nav {
+
+        background-color: var(--navcolor);
+        height: 60px;
+    }
+
+    ul {
+    display: flex;
+    gap: 25px;
+    margin-top: -36px;
+    margin-right: 34px;
+    justify-content: right;
+}
+
+    .logo {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 18px 120px;
+    display: inline;
+    color: var(--navtextcolor);
+}
+</style>
+
+<body>
+    <nav>
+        <div class="logo">G</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="menu">Home</a></li>
+                <li><a href="#" class="menu">Services</a></li>
+                <li><a href="#" class="menu">About us</a></li>
+                <li><a href="#" class="menu">Contact us</a></li>
+                <li><a href="#" class="menu">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+
+</html>
