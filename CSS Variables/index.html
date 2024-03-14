@@ -5,48 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Variables are the container which stores the value so that we can reuse it again. */
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        /* CSS mein mainly 2 variables hote hain 1st is GLOBAL Variable and 2nd is LOCAL VARIABLE */
-
-        /* GLOBAL VARIABLE - aise variable hote hain jinhe ham pure web page mein kahin bhi use kar sakte hain */
-
-        /* Global Variable ko use karne ke liye hamlog :root selector ka use karte hain, then use andar apne variables ko declare karte hain. */
-
-        /* Global Variable Syntax Example
-        --variablename:values */
-        
-        /* LOCAL VARIABLE - aise variable hote hain jinhe ham sirf kisi selector ke andar use kar sakte hain jahan pe hamne ise declare kiya hai */
-        /* Local Variable Syntax Example
-        --variablename:values */
-
-
-        :root{
-            --nav_color:red;
-            --text_color:white;
-            --text_background:blue;
-        }
-        .nav>ul{
-            display: flex;
-            background-color: var(--nav_color);
-            color: var(--text_color);
-            justify-content: right;
-            
-        }
-        ul>li{
-            margin-right: 14px;
-            list-style: none;
-            padding: 14px;
-        }
-        .para{
-            background-color: var(--text_background);
-            color: var(--text_color);
-        }
-    </style>
 </head>
 <body>
     <div class="nav">
