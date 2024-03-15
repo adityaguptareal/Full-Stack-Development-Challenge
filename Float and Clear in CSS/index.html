@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and Clear</title>
+</head>
+<style>
+    .cards{
+        border: 2px solid black;
+        display: flow-root;
+
+    }
+    .card{
+        border: 2px solid red;
+    }
+img{
+    /* float property is used to allow the content in either in left or right side */
+    float: right;
+}
+.card:nth-child(3){
+    background-color: aqua;
+    clear: right;
+    /* clear: right; property is used to remove the declare flow content  */
+}
+</style>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s" alt="">
+        <div class="card"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolorem culpa rerum provident architecto unde explicabo amet mollitia, minus quidem repudiandae voluptate eos, iure esse officia molestiae voluptas cum facere!</p></div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+        <div class="card">card 4</div>
+    </div>
+</body>
+</html>
