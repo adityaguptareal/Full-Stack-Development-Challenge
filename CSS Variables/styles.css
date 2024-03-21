@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +6,13 @@
 
 /* Variables are the container which stores the value so that we can reuse it again. */
 
+=======
+/* Variables are the container which stores the value so that we can reuse it again. */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+>>>>>>> 65ce2283506cd4b0fe56b0ff73596c54f401c39d
 /* CSS mein mainly 2 variables hote hain 1st is GLOBAL Variable and 2nd is LOCAL VARIABLE */
 
 /* GLOBAL VARIABLE - aise variable hote hain jinhe ham pure web page mein kahin bhi use kar sakte hain */
@@ -18,6 +26,7 @@
 /* Local Variable Syntax Example
 --variablename:values */
 
+<<<<<<< HEAD
 :root {
     --nav_color: red;
     --text_color: white;
@@ -25,19 +34,38 @@
 }
 
 .nav>ul {
+=======
+
+:root{
+    --nav_color:red;
+    --text_color:white;
+    --text_background:blue;
+}
+.nav>ul{
+>>>>>>> 65ce2283506cd4b0fe56b0ff73596c54f401c39d
     display: flex;
     background-color: var(--nav_color);
     color: var(--text_color);
     justify-content: right;
+<<<<<<< HEAD
 }
 
 ul>li {
+=======
+    
+}
+ul>li{
+>>>>>>> 65ce2283506cd4b0fe56b0ff73596c54f401c39d
     margin-right: 14px;
     list-style: none;
     padding: 14px;
 }
+<<<<<<< HEAD
 
 .para {
+=======
+.para{
+>>>>>>> 65ce2283506cd4b0fe56b0ff73596c54f401c39d
     background-color: var(--text_background);
     color: var(--text_color);
 }

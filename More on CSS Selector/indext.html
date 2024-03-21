@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+    /* .box:first-child selector is used to select the first child of the element 
+
+    [data-color="primary"] is an attribute selector used to select the attribute of an element 
+
+     .box:nth-child(even){
+        color: green; nth child pseudo selector this is used to select the nth child which is even 
+     }
+
+      .box:nth-child(odd){
+        color: yellow; nth child pseudo selector this is used to select the nth child which is odd
+     }
+
+     .box::first-line is used to select the first line of text of the element
+     
+     .box:nth-last-child(2){
+        color: red; is used to select the 2nd last child
+     }
+
+     ::after is pseudo elements used to add content dynamically after the element
+
+     ::before is pseudo elements used to add content dynamically before the element
+
+     ::selection{
+        background-color: yellow;
+        color: red; is used to change the property while the user selection
+
+    .box::first-letter is used to select the first letter of the text in the element
+     */
+
+     
+     .box::first-letter{
+        text-transform: lowercase;
+        color: red;
+        font-size:xx-large;
+     }
+        .boxes * {
+            color: blue;
+            border: 2px solid black;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+</body>
+
+</html>
