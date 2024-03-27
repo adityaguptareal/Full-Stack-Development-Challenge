@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Examples</title>
+</head>
+<style>
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 0.4rem;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 5px solid white;
+    /* justify-self: center; */
+    /* justify-self: end; is used to align it horizontally */
+    /* align-self: center; */
+    /* align-self: center; is used to align it vertically */
+    place-self: center;
+    padding: 10px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    
+</body>
+</html>

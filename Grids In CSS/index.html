@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- learning Resource 
+https://www.youtube.com/watch?v=byCsxHUuOrk&t=902s
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    .container{
-        background-color: grey;
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        padding: 2rem;
+    * {
+        margin: 0px;
+        padding: 0px;
     }
-    .item{
+
+    body {
+        height: 88vh;
+        width: 90vw;
+    }
+
+    .container {
+        background-color: grey;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        padding: 4rem;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .item {
         background-color: purple;
         border: 2px solid black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+
+    @media (min-width:768px) {
+        .container {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .Footer {
+            grid-column: 1/4;
+            /* grid-column: 1/4; short hand for grid-column-start:1; and grid-cloumn-end-4px; */
+        }
+
+        .Sidebar {
+            grid-row: 2 / 4;
+        }
+
+        .Content-1 {
+            grid-column: 2/4;
+        }
     }
 </style>
+
 <body>
     <div class="container">
-        <div class="item">item 1</div>
-        <div class="item">item 2</div>
-        <div class="item">item 3</div>
-        <div class="item">item 4</div>
-        <div class="item">item 5</div>
-        <div class="item">item 6</div>
+        <div class="item header">Header</div>
+        <div class="item Sidebar">Sidebar</div>
+        <div class="item Content-1">Content-1</div>
+        <div class="item Content-2">Content-2</div>
+        <div class="item Content-3">Content-3</div>
+        <div class="item Footer">Footer</div>
     </div>
 </body>
+
 </html>
