@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+    /* transform: rotateX(40deg); is used to rotate the element to 45 degree in x axis we can also specify the y axis */
+
+    /* transform: scale(1.9); is used to scale the element we can also set its axis by using transform:scaleX() and transform:scaleY()  */
+
+     /* transform: rotate(45deg);  is used to rotate the element to 45 degree */
+
+     /* transform: skew(40deg); is used to skew the element to 40 degree
+     IMPORTANT POINT - WE CANNNOT SET THE SKEW PROPERTY IN THE Z AXIS */
+
+     /* transform: translate(48px); The translate property allows you to change the position of elements. */
+
+     /* transform: translateY(34px) skew(34deg) rotate(45deg); short hand to use multiple transform property in one line */
+
+     /* transform-origin: 0% 0%; property is used to set the origin from where we want to specify any ratation */
+ 
+        border: 2px solid black;
+    }
+    .container{
+        height: 80vh;
+        width: 100vw;
+        border: 2px solid purple;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
