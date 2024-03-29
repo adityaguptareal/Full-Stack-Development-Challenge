@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthbag</title>
+</head>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .logo>img {
+        height: 70px;
+        width: 120px;
+    }
+
+    li>a {
+        color: #484745;
+        text-decoration: none;
+        margin-right: 20px;
+        padding-bottom: 4px;
+        box-sizing: border-box;
+    }
+
+    
+    .navigation>ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .header {
+        display: flex;
+        padding-left: 175px;
+        padding-right: 155px;
+    }
+
+    .menu-bar {
+        display: flex;
+        margin-left: 350px;
+        margin-top: 30px;
+        /* justify-content: flex-end; */
+    }
+
+    .button {
+        color: white;
+        background-color: #255ed6;
+        font-weight: bold;
+        height: 46px;
+        width: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 18px;
+
+    }
+
+    .hero-section {
+        /* color: grey; */
+        display: inline-flex;
+        gap: 326px;
+
+    }
+
+    .content-box {
+    width: 509px;
+    height: 325px;
+    padding-left: 186px;
+    /* border: 2px solid black; */
+    margin-top: 100px;
+}
+
+.content-box>h1{
+        color: #09090a;
+        margin-bottom: 23px;
+
+    }
+    .content-box>.button{
+        margin-top: 40px;
+    }
+    .image-box>img {
+    height: 528px;
+    width: 668px;
+}
+.button>a{
+    text-decoration: none;
+    color: white;
+}
+ul>li>a:hover {
+        border-bottom: 2px solid #fd958b;
+
+    }
+
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <div class="menu-bar">
+                <nav class="navigation">
+                    <ul>
+                        <li class="menu"><a href="#">Home</a></li>
+                        <li class="menu"><a href="#">Services</a></li>
+                        <li class="menu"><a href="#">About Us</a></li>
+                        <li class="menu"><a href="#">Our team</a></li>
+                        <li class="menu"><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-button button"><a href="#">Login</a></div>
+        </div>
+        <div class="hero-section">
+            <div class="content-box">
+                <h1 class="heading">Find the good life by good health</h1>
+                <div class="para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, labore.orem ipsum, dolor sit amet consectetur adipisicing elit. Iste, 
+                </div>
+                <div class="button"><a href="#">Learn More</a></div>
+            </div>
+            <div class="image-box">
+                <img src="doctor.png" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
