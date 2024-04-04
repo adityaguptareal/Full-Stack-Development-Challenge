@@ -1,0 +1,70 @@
+.conatiner{
+    background-color: rgb(1, 81, 55);
+    height: 80vh;
+    width: 30vw;
+}
+.box{
+    height: 34px;
+    width: 45px;
+    background-color: aqua;
+animation: animate 1s ease-in-out 2s 2,
+animation1 1s ease-in-out 3s 3 ;
+
+/* animation-name: animate; is used to mention the animation name */
+/* animation-duration: 4s; */
+
+/* animation-duration: 4s; is used to set the how much time does it take to set the animation duration */
+/* animation-iteration-count: infinite; */
+
+/* animation-iteration-count: infinite; is used to set the how many times you want to run the animation*/
+
+/* animation-timing-function: ease-in-out; */
+/* animation-delay: 1s; */
+/* animation-delay: 4s; is used to add delay in animation */
+
+/* animation-direction: reverse; */
+/* animation-direction: reverse; is used to animate in the reverse direction */
+
+/* animation-play-state: paused; */
+/* animation-play-state: paused; is used to pause the animation at exact time */
+
+/* IMPORTANT SHORTHAND FOR ANIMATION ! */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+/* animation-fill-mode: forwards; */
+/* animation-fill-mode: backwards; is used to retain the backward property of animation */
+/* animation-fill-mode: forwards; is used to retain the forward property of the animation */
+
+
+}
+
+@keyframes animate {
+    from{
+background-color: red;
+    }
+    to{
+        background-color: yellow;
+        transform: translateX(30vw);
+    }
+}
+@keyframes animation1 {
+    0%{
+transform: rotate(100deg);
+}
+10%{
+        transform: rotate(200deg);
+        
+    }
+    20%{
+        transform: rotate(220deg);
+        
+    }
+    80%{
+        transform: rotate(300deg);
+        
+    }
+    100%{
+        transform: rotate(310deg);
+
+    }
+}
