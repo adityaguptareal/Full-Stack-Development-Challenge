@@ -52,6 +52,7 @@ ul{
 main {
     display: flex;
     justify-content: space-around;
+    margin-bottom: -23px;
 }
 .left-container {
     display: flex;
@@ -140,14 +141,19 @@ section{
 .doctor-image>img {
     border-bottom-right-radius: 60px;
     border-top-left-radius: 60px;
-    scale: 1.2;
+
     margin-left: 161px;
     margin-top: 33px;
-}
+    height: 450px;
+    width: 400px;
+} 
 .featured-section {
     display: flex;
-    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
     padding-top: 160px;
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 .feature {
     height: 153px;
@@ -158,4 +164,57 @@ section{
 }
 .feature-heading{
     display: inline;
+}
+
+    .book-now>a:hover{
+        color: white;
+        border: none;
+    }
+    .book-now>a:visited{
+        color: white;
+        border: none;
+    }
+
+    .book-now {
+        background-color: var(--btn-blue-color);
+        padding: 11px 34px;
+        border-radius: 8px;
+        margin-top: -6px;
+        width: 151px;
+    }
+    .left-container>h1 {
+        font-size: 35px;
+        color: var(--primary-text-color);
+    }
+    .last-section {
+        background-color: white;
+        padding-top: 20px;
+        /* display: flex; */
+    }
+    .last-section-container {
+        display: flex;
+        gap: 220px;
+    }
+    .last-section-container img{
+    margin-top: 70px;}
+
+    .arrows{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* justify-content: center; */
+    }
+    .article-header{
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        margin: auto;
+    }
+    .article-header h1{
+    padding-left: 40px;
+    font-size: 36px;
+    color: #313131;
+}
+.arrows-icon{
+    
 }
