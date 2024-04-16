@@ -149,6 +149,8 @@ button{
     border-radius: 5px;
 
 }
+/* testing */
+
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -157,13 +159,42 @@ button{
 .items>#English{
     padding-bottom: 48px; 
 }
+.toggle{
+    display: none;
+}
+button>a{
+    color: white;
+    text-decoration: none;
+}
 
-
-@media screen and (max-width:1145px) {
+@media screen and (max-width:1000px) {
 
     .grid{
-        background-color: red;
         grid-template-columns: 1fr;
 
 }
+.toggle{
+    display: block;
+    height: 30px;
+    width: 30px;
 }
+.menu{
+    display: none;
+    background-color: rebeccapurple;
+}
+.heading{
+    display: block;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+.review{
+    scale: 2;
+    margin-top: 40px;
+}
+.subheading {
+    font-size: 1em;
+   
+}
+}
+

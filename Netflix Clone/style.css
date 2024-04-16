@@ -8,9 +8,11 @@
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
+  min-height: 90vh;
+  min-width: 99vw;
 }
 .box {
-  height: 90vh;
+  min-height: 90vh;
   background-color: rgba(0, 0, 0, 0.516);
 }
 nav {
@@ -50,14 +52,13 @@ nav {
   margin-right: 23px;
 }
 .hero {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  row-gap: 16px;
-  
+  padding-top: 10vh; 
 }
 .hero h1 {
   color: white;
@@ -111,7 +112,7 @@ nav {
     }
  .section-2{
     background-color: black;
-    height: 80vh;
+    min-height: 80vh;
 }
  
 .section-2-container {
@@ -129,7 +130,7 @@ nav {
     font-size: 24px;
     color: white;
     font-weight: 400;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .section-2-left {
     display: flex;
@@ -157,14 +158,17 @@ nav {
 }
 .section-3{
   background-color: black;
-    height: 80vh;
+    min-height: 80vh;
 }
-.section-3-container{
+.section-3-container {
   color: white;
   display: flex;
-  width: 85vw;
-  margin: auto;
+  min-width: 85vw;
+  /* margin: auto; */
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
+
 .section-3-lef-container{
 display: flex;
 flex-direction: column;
@@ -184,14 +188,17 @@ justify-content: center;
   display: flex;
 } */
 .section-4{
-  height: 80vh;
+  min-height: 80vh;
   background-color: black;
+ 
 }
-.section-4-container{
-display: flex;
-width: 70vw;
-margin: auto;
-/* flex-direction: column; */
+.section-4-container {
+  color: white;
+  display: flex;
+  min-width: 85vw;
+  /* margin: auto; */
+  margin-left: 11vw;
+  margin-right: 9vw;
 }
 .section-4-container h1,div{
   color: white;
@@ -220,7 +227,7 @@ margin: auto;
 }
 .faq-section{
   background-color: black;
-  height:100vh;
+  min-height:100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -245,3 +252,4 @@ margin: auto;
   background-color: #4e4e4e;
 
 }
+
