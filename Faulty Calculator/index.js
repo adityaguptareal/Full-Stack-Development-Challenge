@@ -67,7 +67,7 @@ function Calculator() {
         console.log("You Entered Wrong Choice")
     }
 
-    // taking  time to complete
+    //  Just Doin For some test
     
 }
 
