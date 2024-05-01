@@ -41,9 +41,9 @@ let Choosen_text_color=random_color()
 choosen_box.style.backgroundColor = choosen_color;
 choosen_box.style.color =Choosen_text_color;
 
-let display_background_color=document.getElementById("box_color")
-display_background_color.textContent=choosen_color;
+// let display_background_color=document.getElementById("box_color")
+// display_background_color.textContent=choosen_color;
 
-let display_text_color=document.getElementById("box_text_color")
-display_text_color.textContent=Choosen_text_color;
+// let display_text_color=document.getElementById("box_text_color")
+// display_text_color.textContent=Choosen_text_color;
 
