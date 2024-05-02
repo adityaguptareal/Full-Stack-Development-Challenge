@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+</head>
+
+
+<style>
+    body{
+    
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Roboto,Arial, sans-serif;
+
+       
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5vh;
+        align-items: center;
+    }
+    .container h1{
+        margin-bottom: 40px;
+    }
+    .card{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 23px;
+    }
+    .thumbnail{
+        position: relative;
+    }
+    .duration{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.53);
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        margin:12px
+    }
+    .video_title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .card img{
+        border-radius: 10px;
+    }
+    .video_details{
+    font-size: 12px;
+    }
+</style><body>
+    <div class="container">
+        <h1>WEB DEVELOPMENT COURSE</h1>
+        <div class="card">
+            <div class="thumbnail">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" >
+                <div class="duration">34:00</div>
+            </div>
+            
+            <div class="text">
+                <h3 class="video_title">Sigma Web Development Course - Tutorial #4</h3>
+                <div class="video_details">CodeWithHarry. 1.5M views.7 months ago </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
