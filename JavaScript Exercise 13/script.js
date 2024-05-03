@@ -18,7 +18,7 @@ function createCard(title,cname,views,monthOld,duration,thumbnail){
     
     <div class="text">
         <h3 class="video_title">${title}</h3>
-        <div class="video_details"><span id="channel_name">${cname}</span>. ${view_str}.${monthOld}</div>
+        <div class="video_details"><span id="channel_name">${cname}</span>${view_str} &nbsp; ${monthOld}</div>
     </div>
 </div>`
 document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + card;
@@ -31,6 +31,6 @@ document.querySelector(".container").innerHTML = document.querySelector(".contai
 
 
 btn.addEventListener("click",function(){
-    createCard("Sigma Web Development adity Kumar Gupta Tesitng heading title Course - Tutorial #5 ","Aditya Kumar",30000,"9 Months ago","32:45","https://i.ytimg.com/vi/BGeDBfCIqas/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuhpUj-ErJicHq24jgB_3K2Chl_Q")
+    createCard("New Course Uploaded Check it Out- Tutorial #5 ","Aditya Kumar",30000,"9 Months ago","32:45","https://i.ytimg.com/vi/BGeDBfCIqas/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuhpUj-ErJicHq24jgB_3K2Chl_Q")
 })
 
