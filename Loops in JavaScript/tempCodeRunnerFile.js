@@ -1,3 +1,6 @@
-for (let i=0;i>10;i++){
-    console.log(c+i);
+let i=2;
+while (i<5) {
+    console.log(i);
+    i++;
+    
 }

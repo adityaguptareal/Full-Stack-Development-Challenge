@@ -1,0 +1,57 @@
+ Missing Piece to Your Web Development Puzzle ?
+
+
+Have you ever found yourself lost while trying to manipulate the DOM?
+
+It's a powerful tool for web developers, but it can be challenging to remember all the details.
+Fear not, fellow coders! Today's post equips you with a comprehensive cheat sheet of essential DOM methods. With these tools in your arsenal, you'll be a DOM manipulation pro in no time!
+
+
+
+Let's dive in and explore these handy methods:
+
+Below is a list of HTML element properties, methods, and techniques that can be used to manipulate elements on a webpage. 
+
+.innerHTML = This property unveils the complete inner HTML content of an element.
+
+.innerText = This method extracts the text content within an element, minus the HTML tags.
+
+.outerHTML = This property reveals the element's entire HTML code, including its inner content and tag itself.
+
+.tagName = This property identifies the element's HTML tag name (e.g., "div", "p").
+
+.textContent = This property retrieves the combined text content, removing any HTML tags.
+
+.hidden = This property determines if an element is hidden (returns true or false). Set .hidden = true to hide the element.
+
+.hasAttribute("attribute_name") = This method checks if a specific attribute exists on an element (returns true or false).
+
+.getAttribute("attribute_name") = This method grabs the value of a specified attribute on an element (returns a string).
+
+
+
+The following are some techniques for manipulating element appearance:
+
+.setAttribute("style", "display:none") = This method sets a desired style attribute on an element (e.g., hiding it with display:none).
+
+.createElement("tag_name") =  This method creates a brand new HTML element of the specified tag type (e.g., "div").
+
+.before(element) =  This method inserts a new element before the targeted element.
+
+.append(element) =  This method appends a new element as the last child of the targeted element.
+
+.prepend(element) =  This method inserts a new element as the first child of the targeted element.
+
+.replaceWith(element) =  This method replaces the existing element with a new one.
+
+.insertAdjacentHTML(position, html_content) =  This method injects HTML content into a specific location within the element.
+
+.remove() =  This method eliminates the selected element from the DOM entirely.
+
+.classList =  This property provides access to an element's class list, allowing you to add, remove, or toggle classes.
+
+
+
+
+
+

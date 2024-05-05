@@ -15,7 +15,7 @@ function createCard(title,cname,views,monthOld,duration,thumbnail){
         <img src="${thumbnail}">
         <div class="duration">${duration}</div>
     </div>
-    
+        
     <div class="text">
         <h3 class="video_title">${title}</h3>
         <div class="video_details"><span id="channel_name">${cname}</span>${view_str} &nbsp; ${monthOld}</div>

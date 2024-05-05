@@ -63,7 +63,7 @@ var faulty_option=Math.random();
 // var faulty_option=(Math.random());
 // have to remove it
 console.log(faulty_option)
-if (faulty_option<0.1){
+if (faulty_option<0.01){
     console.log("Calculator will work as faulty")
     faulty_calculator()
 }

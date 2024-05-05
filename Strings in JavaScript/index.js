@@ -8,17 +8,17 @@ console.log(a.length)
 
 // String Interpolation is a technique in which we insert a variable direclty in template literal with the help of ${}
 
-// tamplate literals is used when we need to use both single and doubble quotes in our code
+// tamplate literals is used when we need to use or show both single and doubble quotes in our . To use template literals we use (``)
 let name_friend="Nishu"
 let sentence =(`Hey ${name_friend} What are you doing ?`)
 console.log(sentence)
 
 // Escape Sequence Character are Special type of character which is used to perform some special action in our program
 
-// Example \n i used to add next line
+// Example \n is used to add next line
 // \t is used to to add tab in 
 
-// Syntax differene in funtion and Properties b.length ->Properties, b.toUpperCase() -> Function
+// Syntax difference b/w funtion and Properties b.length ->Properties, b.toUpperCase() -> Function
 
 
 // .toLowerCase() is used to convert the string into LowerCase
@@ -34,6 +34,7 @@ console.log(name_friend.toLowerCase())
 
 // .replace(to replace text, from replace text) is used to replace the text in the strinig
 // .concat(variable-name,"anystring(optional)") is used to contcatenate two variables
+// .indexOf("substring") is used to find the first occurence of substring in the main string
 
 
 // Strings are immutable -> means the value can't be change
@@ -42,3 +43,5 @@ console.log(name_friend.slice(0,3))
 
 let author="Aditya Kumar Gupta"
 console.log(author.replace("Kumar","Gupta"))
+console.log(author.indexOf("Kumar"))
+console.log(author.charAt(0))

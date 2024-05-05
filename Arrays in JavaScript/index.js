@@ -51,4 +51,72 @@ console.log(numberss.sort())
 console.log(numberss.splice(0,2))
 // .splice(start-index-position,end-index-position) method is used to delete the element from the list.
 
+let a = [34,54,32,43]
+for (let index = 0; index < a.length; index++) {
+    const element = a[index];
+    console.log(element)
+}
+// a.forEach((value,index,arr)=>{
+//     console.log(value,index,arr)
+// })
+
+let obj={
+    a:2,
+    b:3,
+    c:5
+}
+
+for (const key in obj) {
+        const element = obj[key];
+        console.log(key)
+        console.log(obj[key])
+    }
+
+for (const value of a) {
+    console.log(value)
+}
+
+// Map Mathod is used to create a new array from existing one
+let employee_name=[24,23,5,6]
+let new_employe=employee_name.map((e)=>{
+    return e+" Aditya "
+})
+console.log(new_employe)
+
+// Filter Method is used to create a new array which passes a spcific condition or test by a call back function
+let array3=[3,2,4,43,54]
+let new_array3=array3.filter((e)=>{
+    if (e>40){
+        return (true)
+    }
+    return (false)
+})
+console.log(new_array3)
+
+// Reduce method is used to reduce the array into single value example if there is an array which contain 5 number and we want the sum of all the five numbers then we can use reduce method and add sum function in it
+
+let arr_new=[2,4,5,6,2]
+let sum=(a,b)=>{
+    return a+b
     
+}
+console.log(arr_new.reduce(sum,1))
+
+
+// Testing Comarision in this
+let comp_values=[23,32,44,12,31]
+let highest_number=(a,b)=>{
+    if (a>b){
+        return a;
+    }
+    else{
+       return b;
+    }
+};
+
+console.log(comp_values.reduce(highest_number));
+
+let Testing=("Aditya")
+console.log(Array.from(Testing))
+
+// Array.from method is used to convert any object into any array we can also use .slice method to do the same task
