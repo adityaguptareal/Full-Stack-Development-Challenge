@@ -12,16 +12,19 @@ let button=document.getElementById("btn")
 // contextmenu - When user right click
 // keydown - When user key down any keys in keyboard 
 
-button.addEventListener("click",()=>{
-    document.querySelector(".box").textContent="You're clicked"
-})
+// button.addEventListener("click",()=>{
+//     document.querySelector(".box").textContent="You're clicked"
+// })
 
-button.addEventListener("contextmenu",()=>{
-    alert("Don't try to copy our content")
-})
+// button.addEventListener("contextmenu",()=>{
+//     alert("Don't try to copy our content")
+// })
+// document.addEventListener("keydown",(e)=>{
+//     console.log(e.key);
+// })
+// button.removeEventListener("contextmenu",(e)=>{
+//     alert("Context Menu Has Been Removed You can check ")
+// })
 document.addEventListener("keydown",(e)=>{
-    console.log(e.key);
-})
-button.removeEventListener("contextmenu",(e)=>{
-    alert("Context Menu Has Been Removed You can check ")
+console.log(e.key)
 })
