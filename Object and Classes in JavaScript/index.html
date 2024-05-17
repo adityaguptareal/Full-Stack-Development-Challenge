@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and Classes</title>
+</head>
+
+<body>
+
+    <script>
+        // JavaScript object has a special property called prototype that is either null or reference another object
+        let obj = {
+            a: 1,
+            b: "Aditya"
+        }
+        console.log(obj);
+
+        let account = {
+            account_number: true
+        }
+
+        let bank = {
+            bank: true
+        }
+        bank.__proto__ = account;
+
+//  Classes are a way to define a blueprint for creating objects.  
+ 
+// A constructor in JavaScript is like a builder for your objects. It's a special function that gets called whenever you create a new object from a class blueprint. This builder gets its tools (arguments) and uses them to set up the object's initial properties before it's ready to use.
+
+// this keyword is used to make a proeprties in an object.
+
+
+        class Animal {
+            constructor(name) {
+
+            this.name= name
+                console.log("Object is created")
+            }
+            eats(){
+                console.log('Kha rha hun')
+            }
+            Jumps(){
+                console.log('Jump kar rha hun')
+            }
+        }
+
+        let a= new Animal()
+    </script>
+</body>
+
+</html>
