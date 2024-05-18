@@ -10,44 +10,156 @@
 <body>
 
     <script>
-        // JavaScript object has a special property called prototype that is either null or reference another object
-        let obj = {
-            a: 1,
-            b: "Aditya"
-        }
-        console.log(obj);
+        // JavaScript object has a special property called prototype that is either null or reference another object.
 
-        let account = {
-            account_number: true
-        }
-
-        let bank = {
-            bank: true
-        }
-        bank.__proto__ = account;
-
-//  Classes are a way to define a blueprint for creating objects.  
- 
-// A constructor in JavaScript is like a builder for your objects. It's a special function that gets called whenever you create a new object from a class blueprint. This builder gets its tools (arguments) and uses them to set up the object's initial properties before it's ready to use.
-
-// this keyword is used to make a proeprties in an object.
+        // Prototype is a object inside any object
 
 
-        class Animal {
-            constructor(name) {
 
-            this.name= name
-                console.log("Object is created")
-            }
-            eats(){
-                console.log('Kha rha hun')
-            }
-            Jumps(){
-                console.log('Jump kar rha hun')
-            }
-        }
+        //  Classes are a way to define a blueprint for creating objects.  
 
-        let a= new Animal()
+        // A constructor in JavaScript is like a builder for your objects. It's a special function that gets called whenever you create a new object from a class blueprint. This builder gets its tools (arguments) and uses them to set up the object's initial properties before it's ready to use.
+
+        // this keyword is used to make a proeprties in an object.
+
+
+
+        // class Animal {
+        //     constructor(name) {
+
+        //         this.name = name
+        //         console.log("Object is created")
+        //     }
+        //     eats() {
+        //         console.log('Kha rha hun')
+        //     }
+        //     Jumps() {
+        //         console.log('Jump kar rha hun')
+        //     }
+        // }
+
+        // the extends keyword is used for inheritance within Object-Oriented Programming (OOP). It allows you to create a new class (child class) that inherits properties and methods from an existing class (parent class).
+
+        // The super keyword in JavaScript is used within classes to call methods or access properties from a class's parent (superclass)  during object-oriented programming. 
+
+        // class lion extends Animal {
+        //     constructor(name) {
+        //         super(name)
+        //         console.log("Lion Object is Created")
+        //     }
+        //         Jumps() {
+        //             console.log('Jump kar rha hun as lion')
+        //         }
+        // }
+        // let a = new Animal("Bunny")
+        // let b = new lion("Aditya")
+        // console.log(b)
+
+        // Properties is also called state
+        // And functions of a calle are also called methods and bahviour
+
+
+        // const student={
+        //     fullName:"Adity",
+        //     Marks:94.4,
+        //     printMarks:function(){
+        //         console.log("Marks=",this.Marks)
+        //     },
+        // }
+        // console.log(student);
+
+        // const employee = {
+        //     calcTax() {
+        //         console.log("Tax rate is 10%");
+        //     }
+        // }
+        // const KaranArjun = {
+        //     salary: 5000,
+        // };
+        // KaranArjun.__proto__ = employee
+
+        // Jab kisi Object and Prototype ke andar same method hote hain toh object ka method use hota hai and isko hamlog methdo overwriting bhi kehte hain.
+
+    //     class ToyataCar {
+    //         constructor(brand, milege) {
+    //             this.brand = brand;
+    //             this.milege = milege;
+    //         }
+    //         start() {
+    //             console.log("start");
+    //         }
+    //         Stop() {
+    //             console.log("Stop");
+    //         }
+
+    //     }
+
+    //     // Inheritance is passing down properties or methods from parent class to child class
+
+    //     let fortuner = new ToyataCar("Fortuner", 100)
+    //     console.log(fortuner.start());
+
+    //     class parent {
+    //         hello() {
+    //             console.log('hello');
+    //         }
+    //     }
+    //     class child extends parent { }
+    //     let obj = new child()
+    //     console.log(obj);
+    //     console.log(obj.hello());
+
+    //     class person {
+    //         eat() {
+    //             console.log('Eat');
+    //         }
+    //         sleep() {
+    //             console.log('sleet');
+    //         }
+    //         work() {
+    //             console.log('work nothing');
+    //         }
+    //     }
+    //     class Developer extends person {
+    //         constructor(branch) {
+    //             super()
+    //             this.branch = branch
+    //         }
+    //         work() {
+    //             console.log('Fixing bugs');
+    //         }
+
+    //     }
+
+    //     let aditya = new Developer("IT")
+    //   console.log(aditya);
+    
+    let data="secret information"
+
+class user{
+    constructor(email,name){
+        this.email=email;
+        this.name=name;
+    }
+    viewData(){
+        console.log('data=',data);
+    }
+}
+
+class admin extends user{
+    constructor(email,name){
+        super(email,name)
+    }
+    editaData(){
+        data="some new value"
+    }
+    
+}
+let aditya1=new user("Aditya@gmail.com",'Aditya 1')
+let aditya2=new user('Aditya@gmail.com','Aditya 2')
+let aditya3=new user('Aditya@gmail.com','Aditya 3')
+let nishu=new admin('Aditya@gmail.com','Aditya 3')
+
     </script>
 </body>
 
