@@ -1,5 +1,6 @@
 console.log("Js Connected")
 let currentSong=new Audio()
+let songs;
 
 async function getSongs() {
 
@@ -21,48 +22,34 @@ async function getSongs() {
 }
 
 
-function seconds_to_minutes(seconds) {
-    // / Ensure seconds is a number and non-negative
-    if (isNaN(seconds) || seconds < 0) {
-      return "Invalid input";
-    }
-  
-    // Handle exceeding maximum time limit (optional)
-    // Uncomment and adjust the limit (e.g., 3600 seconds for 1 hour) if needed
-    // if (seconds > 3600) {
-    //   return "Time exceeds limit";
-    // }
-  
-    // Calculate minutes (round down to nearest whole minute)
-    const minutes = Math.floor(seconds / 60);
-  
-    // Calculate remaining seconds (round down to nearest whole number)
-    const remainingSeconds = Math.floor(seconds % 60);
-  
-    // Format minutes with leading zero if needed (simple approach)
-    let formattedMinutes = minutes.toString();
-    if (minutes < 10) {
-      formattedMinutes = "0" + formattedMinutes;
-    }
-  
-    // Format seconds without decimals (using Math.floor)
-    const formattedSeconds = Math.floor(remainingSeconds).toString();
-  
-    // Return the formatted time string
-    return formattedMinutes + ":" + formattedSeconds;
-  }
-    
+function seconds_to_minutes(seconds){
+     // Round down to get the whole number of seconds
+     const totalSeconds = Math.floor(seconds);
+
+     // Calculate minutes and remaining seconds
+     const minutes = Math.floor(totalSeconds / 60);
+     const remainingSeconds = totalSeconds % 60;
+ 
+     // Pad with leading zeros if necessary
+     const paddedMinutes = String(minutes).padStart(2, '0');
+     const paddedSeconds = String(remainingSeconds).padStart(2, '0');
+ 
+     // Format as MM:SS
+     return `${paddedMinutes}:${paddedSeconds}`;
+}
+
+
   
 
 
-const playMusic=(track)=>{
+const playMusic=(track,pause=false)=>{
     currentSong.src="/songs/"+track
+if (!pause) {
     currentSong.play()
     play.src="pause.svg"
-    var currentSongName = track
-    .split(" ") // Split the track name into words
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter and join back
-    .join(" ").replaceAll("-", " ");
+    
+}
+    var currentSongName = decodeURI(track).replaceAll("-"," ").replaceAll(".mp3","").replaceAll("%20"," ").slice(0,60).toUpperCase()
      // Join the capitalized words back into a string
     document.querySelector(".song-time").innerHTML="00:00"
     document.querySelector(".song-info-txt").innerHTML=currentSongName;
@@ -70,10 +57,11 @@ const playMusic=(track)=>{
 
 async function main() {
     // Checking the Function
-    let songs = await getSongs()
-    console.log(songs);
+    songs = await getSongs()
+    playMusic(songs[0],true)
     
-    // Making
+    // Making song audo load
+
     
     //Displaying song list
     let songUl=document.querySelector(".song-list").getElementsByTagName("ul")[0]
@@ -81,7 +69,7 @@ async function main() {
         songUl.innerHTML=songUl.innerHTML+`<li> 
         <img class="invert" src="music_note.svg" alt="">
         <div class="song-info">
-            <div class="song-name">${song}</div>
+            <div class="song-name">${decodeURI(song)}</div>
             <div class="Song-Artist">Aditya</div>
         </div>
         <div class="play-now">
@@ -115,6 +103,51 @@ else{
 currentSong.addEventListener("timeupdate",()=>{
     console.log(currentSong.currentTime,currentSong.duration)
     document.querySelector(".song-time").innerHTML=`${seconds_to_minutes(currentSong.currentTime)}/${seconds_to_minutes(currentSong.duration)}`
+    document.querySelector(".seekbar-circle").style.left=(currentSong.currentTime/currentSong.duration)*100+"%";
 })
+
+// Adding Event Listner on seekbar
+document.querySelector(".seekbar").addEventListener("click",e=>{
+    let song_percent=(e.offsetX/e.target.getBoundingClientRect().width)*100
+    document.querySelector(".seekbar-circle").style.left=song_percent*+"%"
+    currentSong.currentTime=(currentSong.duration*song_percent)/100
+    console.log((currentSong.duration*song_percent)/100);
+    
+})
+
 }
+// Add Event Listner on HamBurger
+document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".left_container").style.left="0"
+})
+// Add Event Listern on close button
+document.querySelector(".close").addEventListener("click",()=>{
+    document.querySelector(".left_container").style.left="-100%"
+
+})
+// Add Event listner or previous
+prev.addEventListener("click",()=>{
+    console.log('Previous clicked');
+    let index=songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    console.log(currentSong.src);
+    console.log(index);
+
+    if(index-1>=0){
+    playMusic(songs[index-1])
+    }
+
+ 
+})
+// Add Event listner or Next
+next.addEventListener("click",()=>{
+    console.log('Next clicked');
+    let index=songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    console.log(currentSong.src);
+    console.log(index);
+
+    if(index+1<songs.length){
+    playMusic(songs[index+1])
+}
+    
+})
 main()
