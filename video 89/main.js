@@ -6,7 +6,7 @@ const port=3000
 app.use(express.static("public"))
 
 app.get('/',(req,res)=>{
-    res.send("You are on the home page")
+    res.send("You are on the home page fixes")
 })
 app.get('/contact',(req,res)=>{
     res.send("You are on the contact page")
