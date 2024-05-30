@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    border: 2px solid blue;
+    display: inline;
+    padding: 45px;
+    /* Important Point - Agar Hamne Display property inline ki hui hai and then padding, margin,width add kar rahe hain toh iss case mein top se padding, margin considerd nhi ki jaati or na hi width set ho sakti hai. Isko solve karne ke liye hame display property ko inline-block karna hoga*/
+
+    /* display: inline; display property ka use ham kisi bhi elements ki width ko set karne ke liye use karte hain. Display property ki value inline, block, flex ya inline-block ho sakti hai. */
+
+    /* inline value ka matalb jitni space required ho uss element ko bas utni space leni hai */
+    
+    /* Block value ka matalb uss line ki puri space leni hai */
+}
+.allbox{
+    margin-right: 13px;
+
+}
+#div3{
+    /* display: none; */
+    /* display: none; use ki jaati hai jab ham kisi div ya container ko display nhi karna chahte hain aur nhi vahan pe koi white space (blank space) rakhna chahte hain .*/
+
+    /* visibility: hidden; property ka use hamlog kisi bhi container ki visibility hide karne ke liye use karte hain. Iss property ko use karne ke baad container to hide ho jaata hai but, white space (blank spaces) reh jaati hai*/
+
+    /* visibility: hidden; */
+    border: 4px solid black;
+
+}
+</style>
+<body>
+  <div class="box allbox" id="div1
+  ">I am a Div</div>  
+  <span class="allbox"> I am Span 1</span>
+  <span class="allbox">I am span 2</span>
+  <div class="box">I am div 2</div>
+  <div id="div3">I don't want to display</div>
+</body>
+</html>

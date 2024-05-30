@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+
+            /* flex-flow: row-reverse; */
+            /* gap: 40px, 4px; */
+            
+
+            /* gap: 5px; is used to add space btween the each items of the container */
+
+            /* gap shorthand gap: 40px, 4px; is a shorthand 40px for row spacing and 4px for column */
+            
+            /* justify-content: center; */
+            
+            /* align-items: center; is used when we have multiples lines and we have to make them center*/
+
+            /* align-content: center; */
+            height: 80vh;
+            flex-wrap: wrap;
+            
+            /* flex-wrap: wrap; is used  in CSS to control whether flex items are forced onto one line or can wrap onto multiple lines*/
+
+            /* Important Point display:flex; property is always used on container */
+
+            /* align-items: center; is used to align item center in cross axis */
+
+            /* By Default flex direction is row in this case the main axis is its horizontal  and cross axis is vertical axis */
+
+            /* When flex direction is column in this case the main axis is its vertical axis and cross axis is horizonatal axis*/
+
+            /* justify-content: center; is used to align the item center in main axis. */
+
+            /* display: flex; is allow to use the flex box properties. By default flex direction is row*/
+        }
+
+        .item {
+            height: 92px;
+            width: 92px;
+            background-color: purple;
+            border: 2px solid black;
+            margin: 4px;
+        }
+        .order-1{
+            order: 1;
+            background-color: teal;
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: flex-end;
+            /* align-self: flex-end; is used to align a partiular item on the flexbox  */
+            /* flex-shrink: 2; specify that the item will shrink 2x as compared to the other itmes */
+            /* flex-grow: 2 The flex-grow CSS property defines how much an element grows relative to other flexible items inside the same parent element.; */
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .order-4{
+            order: 4;
+            /* order: 4; order jitna jyada hoga element utna baad mein aayega */
+        }
+        .order-5{
+            order: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1"></div>
+            <div class="item">Hello World</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+            <!-- <div class="item order-1"></div> -->
+            <div class="item"></div>
+            <div class="item"></div>
+          
+            <div class="item"></div>
+            <div class="item"></div>
+        
+            
+        </div>
+    </main>
+</body>
+
+</html>

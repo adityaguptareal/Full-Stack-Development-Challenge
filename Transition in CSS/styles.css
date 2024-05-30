@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  background-color: antiquewhite;
+  width: 50vw;
+  height: 40vh;
+}
+.box {
+  background-color: aquamarine;
+  width: 5vw;
+  height: 4vh;
+  transition-property: transform;
+  /* transition-property:all; is used to tell tranistion will be applicable on all the property*/
+
+  /* IMPORTANT !- To add transition property in multiple css properties then we can seperaate it with using commas */
+
+  /* transition-property:transform; is used to tell on which property we want to add transition */
+  transition-duration: 3s;
+  /* transition-duration:3s; property used to determine how much time does it take to complete the transition */
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+
+  /* SHOT HAND FOR TRANSITION PROERTY transition:all 3s ease-in-out 1s */
+
+  /* transition-delay:1s; is used to determine after how many seconds the transition will start */
+  
+}
+.translate {
+  transform: translatex(20vw);
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        .body{
+            background-color: #ebeef1
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+        
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 99vh;
+    width: 99vw;
+    font-family: "Raleway", sans-serif;
+
+    
+
+}
+
+.card {
+    margin-left: 10px;
+    padding: 5px;
+    height: 525px;
+    width: 356px;
+    border: 2px solid rgb(204 203 203);
+    border-radius: 10px;
+    background-color: white;
+}
+div>img {
+    width: 355px;
+    height: 218px;
+    border-radius: 7px;
+}
+
+.tag {
+    color: #67696d;
+    font-size: medium;
+    font-weight: 300px;
+    border: 3px solid #e3e2e4;
+    border-radius: 15px;
+    padding: 6px;
+}
+.card_button {
+    margin-top: 18px;
+    margin-left: 18px;
+}
+.heading {
+    color: #232d32;
+    margin-top: 27px;
+    margin-left: 13px;
+    font-size: 28px;
+}
+.text{
+    margin-left: 13px;
+    font-size: 16px;
+    color: #9a9b9e;
+    margin-top: 16px;
+
+}
+.cta{
+    
+    display: flex;
+    justify-content: center;
+
+}
+.ctabutton{
+    color: #0b68e1;
+    background-color: #bdd4ef;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 19px;
+}

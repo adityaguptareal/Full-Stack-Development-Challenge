@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        margin: 12px;
+    }
+</style>
+
+<body>
+    <!-- Create a hacking simulator with green background color and white text and it shows these message with random delay of 1-7 seconds
+    Initializing hacking....
+    Reading your files....
+    Password Files Detected...
+    Sending all passwords and presonal files to server...
+    Clearnning up...
+    -->
+  <script>
+
+
+  
+
+
+const show_message=async(items)=>{
+        await random_dealy();
+        let div=document.createElement("div")
+        div.innerHTML=items;
+        document.body.append(div)
+        
+    }
+ 
+  
+  const random_dealy=()=>{
+    return new Promise((resolve, reject) => {
+        let timeout=Math.random()*(8-1)+1
+        setTimeout(() => {
+            resolve()
+        }, timeout*1000);
+    })
+
+  }
+async function main() {
+
+    setInterval(() => {
+    let last_element=document.body.getElementsByTagName("div")
+    last_element=last_element[last_element.length-1]
+    if (last_element.innerHTML.endsWith("...")){
+        last_element.innerHTML=last_element.innerHTML.slice(0,last_element.innerHTML.length-3)
+    }
+    else{ 
+        last_element.innerHTML=last_element.innerHTML+"."
+    }
+  }, 100);
+    
+    const message=["Initializing hacking....",
+    "Reading your files....",
+    "Password Files Detected...",
+    "Sending all passwords and presonal files to server...",
+    "Cleanning up..."]
+    
+    for (const items of message) {
+        await show_message(items)
+    }
+    
+    await random_dealy()
+
+
+    
+}
+main()
+
+    </script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines in CSS</title>
+    <style>
+        .box {
+            /* box-shadow: h-offset v-offset blur spread color inset  is sed to add shadow effect in any container*/
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 8px 20px 1px blue;
+        }
+
+        .text {
+
+            /* text-shadow: h-offset v-offset blur color; is used to add shadow effect in the text */
+
+            text-shadow: 2px 2px 3px red;
+            margin-top: 30px;
+
+            /* outline: 2px solid red; is used add outline in the text. It does not take space as compared to the border property */
+
+            outline: 2px solid red;
+            outline: offset 13px;
+            ;
+        }
+
+/* Differences between Outlines and Borders:
+While both can visually appear similar, outlines differ from borders in a few ways:
+
+Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. */
+    </style>
+</head>
+
+<body>
+    <div class="box">I am a Box</div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet porro aliquam, perspiciatis
+        minus quis recusandae assumenda ducimus quia temporibus.</p>
+</body>
+
+</html>

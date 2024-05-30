@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        .box {
+
+            width: 80vw;
+            height: 10vh;
+            background-color: red;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: auto;
+            /* font-size: 3rem; ka mtlab hota ki root(html) ke CSS mein jitni value declare ki gyi hai uske kitne times hoga hmare font ka size.
+            Example - html mein hamne font size 12px declare kiya hai but .box ki div mein ham font ko 3rem kar rahe hain jiske vajah se aab iski font size 36px ki hogi  */
+            font-size: 3rem;
+
+        }
+        .container{
+            background-color: red;
+            border: 2px solid black;
+            box-sizing: border-box;
+            width: 80vw;
+            /* height: 80vh; */
+            font-size: 16px;
+            margin: 12px auto;
+            /* % (percent) unit ka mtlab hota hai parent ki terms mein Example - agar kisi div ke andar paragraph hai and hamne paragraph ki width 50% kar di then, iska mtlb ye hai ki hmara paragraph 50% width lega div ki jo ki iss case mein parent hai */
+            /* min-height:80vh; is used to set the minimum height */
+            min-height:80vh;
+        }
+        .container>p{
+            /* font-size: 2em; means jo paragprah ki jo inheritance fonts size hai uske kitne times(multiples) hai hmara font.
+             Example -
+             Iss case mein container mein declaration ki vajah se paragraph ko fonts size 16px milta but hamne aab ise 2em declare kiya hai jiske vajah se aab iski font size 32 pixel ki hogi   */
+            font-size: 2em;
+        }
+        .mycont{
+            background-color: red;
+            color: yellow;
+            font-size: 17px;
+            margin: 40px auto;            
+            
+            /* Vmin unit ka mtlab desktop or phone dono ke liye alag hota hai. Desktop ke case mein Vmin = Vh hoti hai phone ke case main Vmin = Vw hoti hai. Same case Vmax = Vw in desktop and phone ke case mein Vmax = Vh
+            */
+
+            width: 100vmin ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe assumenda cupiditate, dignissimos beatae recusandae dicta vero suscipit magni sequi earum amet nesciunt tenetur natus excepturi rerum ex quidem at. Ratione illum est, ut nemo ipsa cupiditate inventore distinctio numquam atque omnis accusamus, natus iure, corrupti voluptatum magni dignissimos eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat voluptatibus corporis nisi, tempore nobis sint? Molestiae a eius impedit optio dicta inventore commodi esse fuga distinctio ad repellat rem, ut magni, enim provident totam vitae magnam blanditiis! Doloremque facilis, obcaecati fugiat mollitia eius sapiente suscipit, blanditiis, optio ipsam eos perspiciatis saepe. Saepe nobis expedita ullam quae. Voluptates ut hic, impedit officiis dolores eligendi rem soluta, fuga voluptas dolor rerum veniam distinctio ipsum similique quisquam est enim corporis sint vel aspernatur, id cumque? Voluptatem numquam neque facere, cupiditate beatae fuga assumenda vero veritatis ratione mollitia rerum tempora, exercitationem voluptate, alias ab consectetur laudantium iste eveniet! Nam sint, cumque officiis dolorum voluptates voluptatum vel reprehenderit velit ullam quo magni ipsum iusto quisquam soluta numquam natus illo et quibusdam distinctio? Tempore alias a nisi unde repellat neque architecto quisquam placeat sapiente labore id voluptatum dolorem quam eos enim modi numquam deleniti nulla rerum nihil necessitatibus similique aliquam, libero ab. Maiores vitae iure in delectus ipsa est, accusantium sequi soluta perspiciatis deserunt. Maiores libero deleniti ratione suscipit dolorem, culpa repellendus quas iste earum at ipsam aliquam eius hic placeat id officia odit voluptate accusamus ipsum. Accusamus ad cupiditate voluptas dolore fuga veniam saepe.</p></div>
+    <div class="mycont">I am another container</div>
+</body>
+
+</html>

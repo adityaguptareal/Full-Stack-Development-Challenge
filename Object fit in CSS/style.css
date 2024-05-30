@@ -1,0 +1,19 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-image: url("https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg");
+    background-position: center;
+    /* background-position: center; is used to postion the background image in the center */
+    border:2px solid red;
+    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; property is used to make sure that if the background image is small then it will not start repeating */
+}
+.container>img{
+    height: 500px;
+    width: 500px;
+    /* object-fit: contain;
+    object-position: top; */
+    
+    /* object-position: top; is used to determine which part of the image we want to display */
+    /* object-fit: cover;  is used to cover the complete height and width*/
+}
