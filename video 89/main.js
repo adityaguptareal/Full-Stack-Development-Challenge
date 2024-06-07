@@ -1,27 +1,19 @@
-// Express Hello World Programm
-const express=require('express')
-const app=express()
+const expres=require("express")
+const app=expres()
 const port=3000
-
-app.use(express.static("public"))
-
-app.get('/',(req,res)=>{
-    res.send("You are on the home page fixes")
+app.use(expres.static("public"))
+app.get("/",(req,res)=>{
+    res.send("Hello Aditya")
 })
-app.get('/contact',(req,res)=>{
-    res.send("You are on the contact page")
+app.get("/blog",(req,res)=>{
+res.send("Simple Get Request")
 })
-app.get('/blog/:slug',(req,res)=>{
-    res.send(`You are on the blog and ${req.params.slug} page`)
-    // Getting Slug
-    console.log(req.params);
-    // Gettingf Query
-    console.log(req.query);
+
+app.post("/blog",(req,res)=>{
+    res.send("Post request")
+    console.log('Its Post request');
     
 })
-app.get('/services',(req,res)=>{
-    res.send("You are on the services page")
-})
 app.listen(port,()=>{
-    console.log(`You are listening on the port number ${port}`)
+    console.log('Listening Port');
 })
