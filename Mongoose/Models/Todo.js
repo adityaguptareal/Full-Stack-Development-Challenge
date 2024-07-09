@@ -1,8 +1,6 @@
-import mongoose from "mongoose"
-const ToDoSchema=new mongoose.Schema({
-    title:String,
-    desc:String,
-    isDone:Boolean,
-    days:Number
-});
-export const Todo=mongoose.model("Todo",ToDoSchema);
+import mongoose, { mongo } from "mongoose";
+const dbSchema=mongoose.Schema({
+    Date:String,
+    Ip:String,
+})
+export const Tracker=mongoose.model("IpTracked",dbSchema)
