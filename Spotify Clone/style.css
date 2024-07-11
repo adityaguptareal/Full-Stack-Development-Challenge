@@ -15,17 +15,31 @@ body {
 }
 
 .left_container {
-  width: 25vw;
+  width: 30vw;
   padding: 3px;
   /* background-color: black; */
 }
 .right_container {
-  width: 75vw;
+  width: 70vw;
   margin: 8px 0px;
   background-color: #101010;
   padding: 0px 20px;
   position: relative;
   /* max-height: 95vh; */
+}
+.logo img{
+  width: 100px;
+
+}
+.logo{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo span{
+  font-size: 35px;
+ font-family: "Gorditas", serif;
 }
 .home ul li {
   width: 14px;
@@ -94,8 +108,6 @@ body {
   width: 20px;
 }
 .header {
-  justify-content: space-between;
-  display: flex;
   margin-top: -20px;
 }
 .header > * {
@@ -119,6 +131,7 @@ body {
 .nav {
   display: flex;
   gap: 8px;
+  justify-content: space-between;
 }
 .cardContainer .card {
   width: 220px;
@@ -183,10 +196,24 @@ body {
   display: flex;
   gap: 9px;
 }
+.Download_cta{
+  color:black;
+}
 
 .buttons{
-    display: flex;
-    gap: 13px;
+  display: flex;
+  align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+gap: 10px;
+    border-radius: 50px;
+}
+.Download_cta{
+  font-size: 20px;
+  font-weight: 700;
+}
+.playStore{
+  width: 30px;
 }
 button.login-btn {
     font-weight: bold;
@@ -243,6 +270,13 @@ button.signup-btn:hover {
 .song-list ul:hover {
   cursor: pointer;
 }
+.glowImg {
+  position: absolute;
+  bottom: 40px;
+  z-index: 0;
+  opacity: 0.5;
+  left: 345px;
+}
 
 .song-list ul {
   padding: 0px 10px;
@@ -273,8 +307,11 @@ text-transform: capitalize;
 .song-info-txt {
 text-transform: capitalize;
 }
+#volume-bar{
+ accent-color: #54ff00;
+}
 .song-list {
-  height: 345px;
+  height: 500px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -309,6 +346,7 @@ text-transform: capitalize;
 
 .hamburger {
   display: none;
+  width: 30px;
 }
 .left-arrow svg,
 .right-arrow svg {
@@ -324,13 +362,20 @@ text-transform: capitalize;
   gap: 9px;
 }
 
+.song-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 @media screen and (max-width: 1400px) {
   .left_container {
     position: absolute;
     left: -100%;
     transition: all ease 0.1s;
     z-index: 1;
-    width: 60vw;
+    width: 100vw;
     background-color: #121212;
   }
   .right_container {
@@ -347,7 +392,6 @@ text-transform: capitalize;
   }
   .hamburger {
     display: block;
-    width: 22px;
     border: 2px solid black;
     border-radius: 100px;
     padding: 11px;
@@ -356,7 +400,6 @@ text-transform: capitalize;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     font-size: 12px;
     border: 1px solid white;
     border-radius: 10px;
@@ -401,7 +444,15 @@ text-transform: capitalize;
         padding: 10px 2px;
 
 
-    }}
+    }
+  .current-song-container {
+    color: black;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    padding-bottom: 10px;
+}}
 
 
 @media screen and (max-width:377px) {
@@ -426,7 +477,14 @@ text-transform: capitalize;
   .song-info-txt{
     max-width: 450px;
   }
+  .buttons{
+    scale: 0.8;
+  }
 }
 @media screen and (max-width: 450px){
-
+  .Download_cta {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+}
 }

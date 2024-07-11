@@ -5,7 +5,7 @@ let currentSong = new Audio()
 let songs;
 async function getSongs() {
 
-    let song_list = await fetch("http://127.0.0.1:3000/songs/")
+    let song_list = await fetch("http://127.0.0.1:3002/songs/")
     let response = await song_list.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -159,6 +159,8 @@ async function main() {
         console.log((e.target.value) / 100)
         currentSong.volume = (e.target.value) / 100
     })
+
+   
 
     // Adding event listenr for muting
     document.querySelector(".sound").addEventListener("click", () => {
