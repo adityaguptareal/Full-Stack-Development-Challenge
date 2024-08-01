@@ -7,7 +7,8 @@ module.exports = {
         archivo: ["Archivo", "sans-serif"],
       },
       colors: {
-        grey: "#1b1b1b",
+        grey: ["#1b1b1b"],
+        darkishblue:["#202327"]
       },
     },
   },
