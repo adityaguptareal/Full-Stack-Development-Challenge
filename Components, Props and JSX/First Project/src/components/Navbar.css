@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 0, 102);
+    color: white;
+    padding: 10px;
+}
+nav .logo{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+ nav ul li{
+    list-style: none;
+ }
+ nav ul{
+    display: flex;
+    gap: 45px;
+
+ }
