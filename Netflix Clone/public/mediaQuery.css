@@ -1,0 +1,304 @@
+
+@media screen and (max-width:1028px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        padding: 20px 0px;
+        column-gap: 100px;
+    }
+    .tvsection video {
+        position: absolute;
+        left: 51px;
+        top: 56px;
+        bottom: 0;
+        z-index: 0;
+        width: 275px;
+    }
+    .assets{
+        width: 100%;
+    }
+    .tvsection img {
+        z-index: 100;
+        position: relative;
+        width: 100%;
+    }
+    img.backward {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    div.mobile-card {
+        position: relative;
+        width: 100%;
+    }
+    .card {
+        position: absolute;
+        bottom: 63px;
+        display: flex;
+        left: 5px;
+        gap: 50px;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: black;
+        /* width: 308px; */
+        align-items: center;
+        padding: 7px;
+        border: 2px solid slategrey;
+    }
+    section {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        align-items: center;
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+    }
+    .image-container img {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }.image-container video {
+        position: absolute;
+        top: 25px;
+        right: 86px;
+        z-index: 1;
+        width: 100%;
+    }
+    section p {
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    
+}
+
+@media screen and (max-width:780px) {
+    .email-input {
+        padding: 20px 10px;
+        background-color: #0000008c;
+        border: 1px solid white;
+        width: 317px;
+        border-radius: 8px;
+    }
+    section {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        align-items: center;
+    }
+    .tvsection video {
+        position: absolute;
+        left: 51px;
+        top: 56px;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    section {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 100px;
+        align-items: center;
+        text-align: center;
+    }
+    .card {
+        position: absolute;
+        bottom: 63px;
+        display: flex;
+        left: 116px;
+        gap: 50px;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: black;
+        /* width: 308px; */
+        align-items: center;
+        padding: 7px;
+        border: 2px solid slategrey;
+    }
+    .image-container .punjabi_video {
+        position: absolute;
+        top: 25px;
+        right: 103px;
+        z-index: 1;
+        width: 65%;
+    }
+    section h1 {
+        font-size: 32px;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width:430px) {
+    .netflix-logo {
+        width: 88px;
+    }
+    select {
+        background: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 69px;
+        border-radius: 5px;
+        height: 32px;
+        color: white;
+    }
+    .hero-heading {
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
+    .email-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .get-started {
+        padding: 7px 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 48px;
+        border: none;
+        background-color: red;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: medium;
+        font-weight: 700;
+        align-self: center;
+    }
+    section {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 75px 21px;
+        align-items: center;
+        text-align: center;
+    }
+    .tvsection img {
+        z-index: 100;
+        position: relative;
+        width: 101%;
+    }
+    .tvsection video {
+        position: absolute;
+        left: 51px;
+        top: 56px;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    .card {
+        position: absolute;
+        bottom: 63px;
+        display: flex;
+        left: 26px;
+        gap: 50px;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: black;
+        /* width: 308px; */
+        align-items: center;
+        padding: 7px;
+        border: 2px solid slategrey;
+    }
+    .image-container .punjabi_video {
+        position: absolute;
+        top: 25px;
+        right: 67px;
+        z-index: 1;
+        width: 66%;
+    }
+    .faq-card {
+        display: flex;
+        font-size: 24px;
+        background-color: #232323;
+        padding: 10px 31px;
+        margin: 10px 32px;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+    
+    h1.faq-heading {
+        padding: 39px;
+    }
+        
+}
+
+@media screen and (max-width:380px) {
+    h1.faq-heading {
+        padding: 14px;
+    }
+    .faq-card {
+        display: flex;
+        font-size: 24px;
+        background-color: #232323;
+        padding: 10px 31px;
+        margin: 10px 50px;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:330px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        padding: 20px 0px;
+        column-gap: 21px;
+    }
+    .email-input {
+        padding: 20px 10px;
+        background-color: #0000008c;
+        border: 1px solid white;
+        width: 238px;
+        border-radius: 8px;
+    }
+    .tvsection video {
+        position: absolute;
+        left: 35px;
+        top: 39px;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    .card {
+        position: absolute;
+        bottom: 63px;
+        display: flex;
+        left: 0px;
+        gap: 38px;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: black;
+        /* width: 308px; */
+        align-items: center;
+        padding: 7px;
+        border: 2px solid slategrey;
+    }
+    .image-container .punjabi_video {
+        position: absolute;
+        top: 25px;
+        right: 47px;
+        z-index: 1;
+        width: 66%;
+    }
+}

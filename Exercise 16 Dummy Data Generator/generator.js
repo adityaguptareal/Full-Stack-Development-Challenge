@@ -51,7 +51,7 @@ app.get("/generate", async (req, res) => {
         let e = await Employee.create({
             "Name": getRandom(Employe_Name),
             "Salary": Math.floor(Math.random()*(20000000-10000))+10000,
-            "isManager": Math.random()>0.7 ? true:false,
+            "isManager": Math.random()>0.7   ? true:false,
             "City": getRandom(city)
         })
 
