@@ -27,3 +27,4 @@ app.listen(port,()=>{
 // Step 6. To pass any data (variable) to your view templates use this syntax in your .ejs file which you want to edit. Syntax => "<%=variablname>"
 
 // View Engine is basically used to insert the value of variable in an template
+// Code Review
