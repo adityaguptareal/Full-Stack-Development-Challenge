@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import fsn from "fs"
+// Add folder path with double slash "/"
 const folder="C:\\Users\\codea\\Documents\\Web Development\\File organiser\\Unorganised Files"
 
 let files=await fs.readdir(folder)
