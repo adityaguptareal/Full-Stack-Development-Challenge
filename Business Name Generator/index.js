@@ -39,7 +39,7 @@ let Another_word_rand=random()
 let Another_word={ 
 "1":"Bros",
 "2":"Limited",
-"3":"Hub",
+"3":"center",
 }
 let Another_word_choose=Another_word[Another_word_rand]
 
