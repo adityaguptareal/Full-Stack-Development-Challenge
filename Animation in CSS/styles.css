@@ -29,7 +29,7 @@ animation1 1s ease-in-out 3s 3 ;
 /* animation-play-state: paused; is used to pause the animation at exact time */
 
 /* IMPORTANT SHORTHAND FOR ANIMATION ! */
-/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
 
 /* animation-fill-mode: forwards; */
 /* animation-fill-mode: backwards; is used to retain the backward property of animation */
